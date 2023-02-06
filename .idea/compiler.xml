@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="building-an-application-using-java-se-17" />
+        <module name="building-an-application-using-java-se-17-cli" />
+        <module name="building-an-application-using-java-se-17-repository" />
       </profile>
     </annotationProcessing>
   </component>
