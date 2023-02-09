@@ -11,6 +11,7 @@
     <modules>
         <module>building-an-application-using-java-se-17-repository</module>
         <module>building-an-application-using-java-se-17-cli</module>
+        <module>building-an-application-using-java-se-17-server</module>
     </modules>
 
     <properties>
