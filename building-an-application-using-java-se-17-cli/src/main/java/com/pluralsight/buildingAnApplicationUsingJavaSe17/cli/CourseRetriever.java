@@ -1,7 +1,9 @@
 package com.pluralsight.buildingAnApplicationUsingJavaSe17.cli;
 
 import com.pluralsight.buildingAnApplicationUsingJavaSe17.cli.service.CourseRetrievalService;
+import com.pluralsight.buildingAnApplicationUsingJavaSe17.cli.service.CourseStorageService;
 import com.pluralsight.buildingAnApplicationUsingJavaSe17.cli.service.PluralsightCourse;
+import com.pluralsight.courseinfo.repository.CourseRepository;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
@@ -29,12 +31,16 @@ public class CourseRetriever {
 
         LOG.info("Retrieving courses for author '{}'", authorId);
         CourseRetrievalService courseRetrievalService = new CourseRetrievalService();
+        CourseRepository courseRepository = CourseRepository.openCourseRepository("./courses.db");
+        CourseStorageService courseStorageService = new CourseStorageService(courseRepository);
 
         List<PluralsightCourse> coursesToStore = courseRetrievalService.getCoursesFor(authorId)
                 .stream()
                 .filter(course -> !course.isRetired())
                 .toList();
         LOG.info("Retrieved the following {} courses {}", coursesToStore.size(), coursesToStore);
+        courseStorageService.storePluralsightCourses(coursesToStore);
+        LOG.info("Courses successfully stored");
 
     };
 
