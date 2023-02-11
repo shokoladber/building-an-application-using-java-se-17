@@ -3,10 +3,7 @@ package com.pluralsight.courseinfo.server;
 import com.pluralsight.courseinfo.domain.Course;
 import com.pluralsight.courseinfo.repository.CourseRepository;
 import com.pluralsight.courseinfo.repository.RepositoryException;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.NotFoundException;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Path("/courses")
 public class CourseResource {
@@ -27,17 +25,24 @@ public class CourseResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Course> getCourses(){
+    public Stream<Course> getCourses(){
         try{
             return courseRepository
                     .getAllCourses()
                     .stream()
-                    .sorted(Comparator.comparing(Course::id))
-                    .toList();
+                    .sorted(Comparator.comparing(Course::id));
         } catch (RepositoryException error){
             LOG.error("Could not retrieve courses from the database", error);
             throw new NotFoundException();
         }
+    }
+
+
+    @POST
+    @Path("/{id}/notes")
+    @Consumes(MediaType.TEXT_PLAIN)
+    public void addNotes(@PathParam("id") String id, String notes){
+        courseRepository.addNotes(id, notes);
     }
 
 }
