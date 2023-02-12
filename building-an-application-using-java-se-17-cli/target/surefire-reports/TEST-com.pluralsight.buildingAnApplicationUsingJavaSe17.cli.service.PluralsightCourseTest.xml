@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.pluralsight.buildingAnApplicationUsingJavaSe17.cli.service.PluralsightCourseTest" time="0.164" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.pluralsight.buildingAnApplicationUsingJavaSe17.cli.service.PluralsightCourseTest" time="0.16" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/michaelallen/Documents/Coding/PluralSight/building-an-application-using-java-se-17/building-an-application-using-java-se-17-cli/target/surefire/surefirebooter4696123327244012498.jar /Users/michaelallen/Documents/Coding/PluralSight/building-an-application-using-java-se-17/building-an-application-using-java-se-17-cli/target/surefire 2023-02-12T11-49-01_031-jvmRun1 surefire2023320107880647567tmp surefire_115837693367060145646tmp"/>
+    <property name="sun.java.command" value="/Users/michaelallen/Documents/Coding/PluralSight/building-an-application-using-java-se-17/building-an-application-using-java-se-17-cli/target/surefire/surefirebooter12704106029697570568.jar /Users/michaelallen/Documents/Coding/PluralSight/building-an-application-using-java-se-17/building-an-application-using-java-se-17-cli/target/surefire 2023-02-12T12-33-03_174-jvmRun1 surefire9518901389438225399tmp surefire_114939938478374369132tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/michaelallen/Documents/Coding/PluralSight/building-an-application-using-java-se-17/building-an-application-using-java-se-17-cli/target/test-classes:/Users/michaelallen/Documents/Coding/PluralSight/building-an-application-using-java-se-17/building-an-application-using-java-se-17-cli/target/classes:/Users/michaelallen/Documents/Coding/PluralSight/building-an-application-using-java-se-17/building-an-application-using-java-se-17-repository/target/building-an-application-using-java-se-17-repository-1.0-SNAPSHOT.jar:/Users/michaelallen/.m2/repository/com/h2database/h2/2.1.214/h2-2.1.214.jar:/Users/michaelallen/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/michaelallen/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/Users/michaelallen/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/Users/michaelallen/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/Users/michaelallen/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/Users/michaelallen/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/michaelallen/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/michaelallen/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/michaelallen/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/michaelallen/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/michaelallen/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/Users/michaelallen/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/michaelallen/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/michaelallen/Documents/Coding/PluralSight/building-an-application-using-java-se-17/building-an-application-using-java-se-17-cli/target/surefire/surefirebooter4696123327244012498.jar"/>
+    <property name="surefire.real.class.path" value="/Users/michaelallen/Documents/Coding/PluralSight/building-an-application-using-java-se-17/building-an-application-using-java-se-17-cli/target/surefire/surefirebooter12704106029697570568.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
@@ -54,7 +54,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="durationInMinutes{String, long}[1]" classname="com.pluralsight.buildingAnApplicationUsingJavaSe17.cli.service.PluralsightCourseTest" time="0.037"/>
+  <testcase name="durationInMinutes{String, long}[1]" classname="com.pluralsight.buildingAnApplicationUsingJavaSe17.cli.service.PluralsightCourseTest" time="0.035"/>
   <testcase name="durationInMinutes{String, long}[2]" classname="com.pluralsight.buildingAnApplicationUsingJavaSe17.cli.service.PluralsightCourseTest" time="0.002"/>
   <testcase name="durationInMinutes{String, long}[3]" classname="com.pluralsight.buildingAnApplicationUsingJavaSe17.cli.service.PluralsightCourseTest" time="0.002"/>
 </testsuite>
